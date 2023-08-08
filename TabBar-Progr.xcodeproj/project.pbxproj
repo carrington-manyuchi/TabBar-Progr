@@ -62,8 +62,8 @@
 		8C11E5172A821BF600D993DE /* TabBar-Progr */ = {
 			isa = PBXGroup;
 			children = (
-				8C11E51C2A821BF600D993DE /* HomeVC.swift */,
 				8C11E5332A821EEE00D993DE /* TabController.swift */,
+				8C11E51C2A821BF600D993DE /* HomeVC.swift */,
 				8C11E52D2A821E8300D993DE /* WorkoutVC.swift */,
 				8C11E52F2A821E9500D993DE /* HistoryVC.swift */,
 				8C11E5312A821EA100D993DE /* ExerciseVC.swift */,

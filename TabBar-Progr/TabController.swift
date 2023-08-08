@@ -11,11 +11,24 @@ class TabController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.setupTabs()
+        
+        
+        self.tabBar.barTintColor = .systemGreen
+        self.tabBar.tintColor = .systemRed
+        self.tabBar.unselectedItemTintColor = .purple
     }
+    
+    
+    // MARK: - Tabs Setup
     private func setupTabs() {
+        
         let home = self.createNav(with: "Home", and: UIImage(systemName: "house"), vc: HomeVC())
-        self.setViewControllers([], animated: true)
+        let history = self.createNav(with: "History", and: UIImage(systemName: "clock"), vc: HistoryVC())
+        let workout = self.createNav(with: "Workout", and: UIImage(systemName: "person"), vc: WorkoutVC())
+        let exercise = self.createNav(with: "Exercise", and: UIImage(systemName: "cloud.snow"), vc: ExerciseVC())
+        
+        self.setViewControllers([home, history, workout, exercise  ], animated: true)
     }
     
     
