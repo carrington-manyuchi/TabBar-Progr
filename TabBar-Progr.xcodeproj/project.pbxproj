@@ -9,19 +9,27 @@
 /* Begin PBXBuildFile section */
 		8C11E5192A821BF600D993DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C11E5182A821BF600D993DE /* AppDelegate.swift */; };
 		8C11E51B2A821BF600D993DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C11E51A2A821BF600D993DE /* SceneDelegate.swift */; };
-		8C11E51D2A821BF600D993DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C11E51C2A821BF600D993DE /* ViewController.swift */; };
+		8C11E51D2A821BF600D993DE /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C11E51C2A821BF600D993DE /* HomeVC.swift */; };
 		8C11E5222A821BF800D993DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C11E5212A821BF800D993DE /* Assets.xcassets */; };
 		8C11E5252A821BF800D993DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C11E5232A821BF800D993DE /* LaunchScreen.storyboard */; };
+		8C11E52E2A821E8300D993DE /* WorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C11E52D2A821E8300D993DE /* WorkoutVC.swift */; };
+		8C11E5302A821E9500D993DE /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C11E52F2A821E9500D993DE /* HistoryVC.swift */; };
+		8C11E5322A821EA100D993DE /* ExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C11E5312A821EA100D993DE /* ExerciseVC.swift */; };
+		8C11E5342A821EEE00D993DE /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C11E5332A821EEE00D993DE /* TabController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8C11E5152A821BF600D993DE /* TabBar-Progr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TabBar-Progr.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C11E5182A821BF600D993DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C11E51A2A821BF600D993DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8C11E51C2A821BF600D993DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8C11E51C2A821BF600D993DE /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		8C11E5212A821BF800D993DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C11E5242A821BF800D993DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C11E5262A821BF800D993DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C11E52D2A821E8300D993DE /* WorkoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutVC.swift; sourceTree = "<group>"; };
+		8C11E52F2A821E9500D993DE /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		8C11E5312A821EA100D993DE /* ExerciseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseVC.swift; sourceTree = "<group>"; };
+		8C11E5332A821EEE00D993DE /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,26 @@
 		8C11E5172A821BF600D993DE /* TabBar-Progr */ = {
 			isa = PBXGroup;
 			children = (
-				8C11E5182A821BF600D993DE /* AppDelegate.swift */,
-				8C11E51A2A821BF600D993DE /* SceneDelegate.swift */,
-				8C11E51C2A821BF600D993DE /* ViewController.swift */,
-				8C11E5212A821BF800D993DE /* Assets.xcassets */,
-				8C11E5232A821BF800D993DE /* LaunchScreen.storyboard */,
+				8C11E51C2A821BF600D993DE /* HomeVC.swift */,
+				8C11E5332A821EEE00D993DE /* TabController.swift */,
+				8C11E52D2A821E8300D993DE /* WorkoutVC.swift */,
+				8C11E52F2A821E9500D993DE /* HistoryVC.swift */,
+				8C11E5312A821EA100D993DE /* ExerciseVC.swift */,
+				8C11E52C2A821CD100D993DE /* Supporting */,
 				8C11E5262A821BF800D993DE /* Info.plist */,
 			);
 			path = "TabBar-Progr";
+			sourceTree = "<group>";
+		};
+		8C11E52C2A821CD100D993DE /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				8C11E5182A821BF600D993DE /* AppDelegate.swift */,
+				8C11E51A2A821BF600D993DE /* SceneDelegate.swift */,
+				8C11E5212A821BF800D993DE /* Assets.xcassets */,
+				8C11E5232A821BF800D993DE /* LaunchScreen.storyboard */,
+			);
+			path = Supporting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,8 +154,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C11E51D2A821BF600D993DE /* ViewController.swift in Sources */,
+				8C11E5342A821EEE00D993DE /* TabController.swift in Sources */,
+				8C11E5322A821EA100D993DE /* ExerciseVC.swift in Sources */,
+				8C11E51D2A821BF600D993DE /* HomeVC.swift in Sources */,
+				8C11E5302A821E9500D993DE /* HistoryVC.swift in Sources */,
 				8C11E5192A821BF600D993DE /* AppDelegate.swift in Sources */,
+				8C11E52E2A821E8300D993DE /* WorkoutVC.swift in Sources */,
 				8C11E51B2A821BF600D993DE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
