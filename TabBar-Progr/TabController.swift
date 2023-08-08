@@ -14,9 +14,23 @@ class TabController: UITabBarController {
         self.setupTabs()
         
         
-        self.tabBar.barTintColor = .systemGreen
-        self.tabBar.tintColor = .systemRed
-        self.tabBar.unselectedItemTintColor = .purple
+        // adding delegates
+        self.delegate = self
+        
+        //self.tabBar.barTintColor = .systemGreen
+        //self.tabBar.tintColor = .systemRed
+        self.tabBar.unselectedItemTintColor = .blue
+        
+        
+        // to start view on the third controller ie ExerciceVC
+        self.selectedIndex = 2
+
+        // Change background of tabs
+        UITabBar.appearance().backgroundColor = .systemGray5
+        UITabBar.appearance().tintColor = .systemGreen
+        
+
+        
     }
     
     
@@ -44,5 +58,31 @@ class TabController: UITabBarController {
 
         
         return nav
+    }
+}
+
+
+extension TabController: UITabBarControllerDelegate {
+    
+    // will not allow you to switch tabs
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        return true
+    }
+    
+    // did select with a view controller
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+       
+        if self.selectedIndex == 1 {
+            let alert = UIAlertController(title: "Notification", message: "You have selected the second Tab Bar Controller", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Dismiss", style: .default))
+            self.present(alert, animated: true)
+        }
+    }
+    
+    
+    // did select with a tab bar
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+    
+        item.badgeValue = "2"
     }
 }
